@@ -24,7 +24,7 @@ const pets = [
     age: "3 years",
     health: "Healthy",
     born: "2022",
-    img: "https://placekitten.com/401/300"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXc9DbRmmGqZAZ_wQ6ihEw8K7Fmyu3gi-yFw&s"
   },
   {
     name: "Mochi",
