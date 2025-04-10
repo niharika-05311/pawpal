@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PawPal | Adopt A Friend</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>PawPal</h1>
+    <nav class="horizontal-nav">
+      <a href="#welcome">Welcome</a>
+      <a href="#adopt">Adopt</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="welcome" class="section">
+    <h2>Welcome to PawPal</h2>
+    <p>Make a change by adopting, not buying. Find your new best friend today! 🐶🐱</p>
+  </section>
+
+  <section id="adopt" class="section">
+    <h2>Adopt a Pet</h2>
+    <label for="filter-type">Filter by type:</label>
+    <select id="filter-type">
+      <option value="all">All</option>
+      <option value="dog">Dogs</option>
+      <option value="cat">Cats</option>
+      <option value="hamster">Hamsters</option>
+    </select>
+
+    <div id="pet-container" class="pet-container">
+      <!-- Sample pets -->
+      <div class="pet-card" data-type="dog">
+        <img src="https://placedog.net/400/300?id=101" alt="Rambo">
+        <h3>Rambo</h3>
+        <p>Golden Retriever, 2 years, Healthy, Male</p>
+        <button class="view-details">View Details</button>
+      </div>
+      <div class="pet-card" data-type="cat">
+        <img src="https://placekitten.com/400/301" alt="Jenny">
+        <h3>Jenny</h3>
+        <p>Orange Cat, 1 year, Healthy, Female</p>
+        <button class="view-details">View Details</button>
+      </div>
+      <div class="pet-card" data-type="cat">
+        <img src="https://placekitten.com/400/302" alt="Musky">
+        <h3>Musky</h3>
+        <p>Cat, 3 years, Vaccinated, Male</p>
+        <button class="view-details">View Details</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>Love has no breed . Adopting a pet is not only a wonderful way to bring joy into your life , it's also a chance to save a life. At PawPal, we work with trusted shelters to help loving animals find homes. We believe in adoption, compassion, and making lifelong connections.</p>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required><br>
+      <input type="email" placeholder="Your Email" required><br>
+      <textarea placeholder="Your Message" required></textarea><br>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PawPal. All rights reserved.</p>
+  </footer>
+
+  <div id="pet-popup" class="popup hidden">
+    <div class="popup-content">
+      <span id="close-popup">&times;</span>
+      <h2 id="popup-name"></h2>
+      <div id="popup-info"></div>
+      <button id="reserve-btn">Reserve</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
